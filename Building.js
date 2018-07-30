@@ -1,5 +1,5 @@
 class Building{
-    constructor(name, street, city){
+    constructor(name, street, state){
         this._name = name;
         this._street = street;
         this._state = state; 
@@ -25,7 +25,7 @@ class Building{
 
 class Office extends Building{
     constructor(name, street, city, workforce){
-        super()
+        super(name, street, city, workforce)
         this._workforce = workforce;
     }
 
